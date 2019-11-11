@@ -51,6 +51,9 @@
 		get_auto_play		Whether or not the gif is set to play automatically
 		get_length			The number of frames in the gif
 		get_current_frame	The index of the currently displayed frame of the gif
+		get_frames	        An array containing the data for all parsed frames
+		get_duration	    Returns the duration of the gif in hundredths of a second (standard for GIF spec)
+		get_duration_ms	    Returns the duration of the gif in milliseconds
 
 		For additional customization (viewport inside iframe) these params may be passed:
 		c_w, c_h - width and height of canvas
@@ -909,6 +912,12 @@
             return true;
         }
 
+        var calculateDuration = function() {
+            return frames.reduce(function(duration, frame) {
+                return duration + frame.delay;
+            }, 0);
+        }
+
         return {
             // play controls
             play: player.play,
@@ -923,6 +932,9 @@
             get_loading      : function() { return loading },
             get_auto_play    : function() { return options.auto_play },
             get_length       : function() { return player.length() },
+            get_frames       : function() { return frames },
+            get_duration     : function() { return calculateDuration() },
+            get_duration_ms  : function() { return calculateDuration() * 10 },
             get_current_frame: function() { return player.current_frame() },
             load_url: function(src,callback){
                 if (!load_setup(callback)) return;
