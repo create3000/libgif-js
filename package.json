@@ -1,19 +1,19 @@
 {
   "name": "libgif",
   "version": "0.0.3",
-  "description": "JavaScript GIF parser and player forked from Buzzfeed",
+  "description": "JavaScript GIF parser and player forked from Kelyvin",
   "main": "libgif.js",
   "scripts": {
     "test": "echo \"No active tests\" && exit 0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kelyvin/libgif-js.git"
+    "url": "git+https://github.com/create3000/libgif-js.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kelyvin/libgif-js/issues"
+    "url": "https://github.com/create3000/libgif-js/issues"
   },
-  "homepage": "https://github.com/kelyvin/libgif-js#readme"
+  "homepage": "https://github.com/create3000/libgif-js#readme"
 }

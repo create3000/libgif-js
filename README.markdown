@@ -61,6 +61,7 @@ Of note to the developer, libjs.gif contains a class SuperGif, which can be used
 * **progressbar_height** -			Optional. The height of the progress bar.
 * **progressbar_background_color** -			Optional. The background color of the progress bar.
 * **progressbar_foreground_color** -			Optional. The foreground color of the progress bar.
+* **on_error** -			Optional. Add a callback for when a load error occurs.
 
 ### Instance methods
 
