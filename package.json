@@ -1,6 +1,6 @@
 {
   "name": "@create3000/libgif",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "JavaScript GIF parser and player forked from Kelyvin",
   "main": "libgif.js",
   "scripts": {
